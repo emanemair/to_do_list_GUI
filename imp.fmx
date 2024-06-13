@@ -1,0 +1,60 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 426
+  ClientWidth = 388
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object AddTask: TButton
+    Position.X = 248.000000000000000000
+    Position.Y = 57.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'ADD '
+    TextSettings.Trimming = None
+    OnClick = AddTaskClick
+  end
+  object EditTask: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 24.000000000000000000
+    Position.Y = 57.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    OnKeyDown = EditTaskKeyDown
+  end
+  object ListTaskBox: TListBox
+    Position.X = 24.000000000000000000
+    Position.Y = 136.000000000000000000
+    TabOrder = 2
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = ListTaskBoxItemClick
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 196.000000000000000000
+  end
+  object EditTaskLabel: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 24.000000000000000000
+    Text = 'Add task '
+    TabOrder = 3
+  end
+  object EmptyTaskAlert: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 24.000000000000000000
+    Position.Y = 98.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.FontColor = claRed
+    TabOrder = 4
+  end
+end
